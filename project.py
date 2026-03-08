@@ -53,9 +53,7 @@ st.markdown("""
 # ----------------------------
 # Load API
 # ----------------------------
-load_dotenv()
-api_key = os.getenv("groq_api_key")
-
+api_key = st.secrets["groq"]["api_key"]
 # ----------------------------
 # Model
 # ----------------------------
